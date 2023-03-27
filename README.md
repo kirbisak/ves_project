@@ -1,3 +1,2 @@
 Projekt
-
 Martin Zoričák
