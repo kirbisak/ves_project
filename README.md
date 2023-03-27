@@ -5,3 +5,5 @@ Martin Zoričák
 Gabriel Hrebeňár
 
 #Simon Bilos
+
+Samuel Valluš
