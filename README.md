@@ -1,11 +1,22 @@
-Projekt
 
-Martin Zoričák
+# Clenovia:
+- Martin Zoričák
 
-Gabriel Hrebeňár
+- Gabriel Hrebeňár
 
-#Simon Bilos
+- #Simon Bilos
 
-Samuel Valluš
+- Samuel Valluš
 
-ja tuez
+## Ako spustis
+- ### Linux
+```
+$ python3 -m pip install -r requirements.txt
+$ flask run
+```
+
+- ### Windows
+```
+$ python3 -m pip install -r requirements.txt
+$ flask run
+```
