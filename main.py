@@ -40,3 +40,6 @@ def render():
   #img = render_ves(ves, width) # tu posleme VES riadky do funkcie render_ves z projektu z prvého polroka
   img = render_ves(ves) 
   return serve_pil_image(img) # vratime vyrenderovany obrazok ako jpg
+
+if __name__ == '__main__':
+    app.run(debug=True)
