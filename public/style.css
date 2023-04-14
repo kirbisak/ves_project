@@ -1,18 +1,116 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body {
 	display: flex;
+	background: #0c192c;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.bublinky{
+	width: 1000vw;
+	position: relative;
+	display: flex;
+}
+.bublinky span{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #4fc3dc;
+	margin: 0 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(100s / var(--i));
+}
+.bublinky span:nth-child(even)
+{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #ff2d75;
+	margin: 0 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(120s / var(--i));
+}
+
+@keyframes animate{
+	0%
+	{
+		transform: translateY(100vh) scale(0);
+	}
+	100%
+	{
+		transform: translateY(-10vh) scale(1)
+	}
 }
 body > section {
 	flex-basis: 50%;
 }
-textarea {
-	width: 100%;
-	height: 90vh;
-}
+
 img {
 	width: 100%;
 	height: auto;
 }
+textarea{
+	text-align:left;
+	border-color: #ff2d75;
+	position: relative;
+	color: white;
+	background-color: #00000079;
+	margin-top: 2%;
+	margin-left: 5%;
+	border-radius: 3%;
+	padding: 1em;
+	border: 1% solid transparent;
+	outline: none;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 130%;
+	line-height: 1.8;
+	width: 30%;
+	height: 800px;
+	transition: all 0.5s;
+}
+textarea:hover{
+	cursor: pointer;
+	background-color: #000000c0;
+	color: white;
+	border-color: #4fc3dc;
+}
+.odoslat{
+	position: absolute;
+	margin-top: 40%;
+	margin-left: 65%;
+	font-family: sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	background: #ff2d75;
+	width: 10%;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 3px #4fc3dc;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: box-shadow, transform;
+}
+.odoslat:hover, .odoslat:focus, .odoslat.active{
+	box-shadow: 0 0 15px #4fc3dc;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
