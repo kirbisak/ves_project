@@ -57,8 +57,7 @@ body > section {
 }
 
 img {
-	width: 100%;
-	height: auto;
+	width: 50%;
 }
 textarea{
 	text-align:left;
@@ -72,7 +71,7 @@ textarea{
 	padding: 1em;
 	border: 1% solid transparent;
 	outline: none;
-	font-family: sans-serif;
+	font-family: Calibri;
 	font-weight: 500;
 	font-size: 130%;
 	line-height: 1.8;
@@ -88,10 +87,10 @@ textarea:hover{
 }
 .odoslat{
 	position: absolute;
-	margin-top: 40%;
-	margin-left: 65%;
-	font-family: sans-serif;
-	font-size: 120%;
+	margin-top: 42%;
+	margin-left: 59%;
+	font-family: calibri;
+	font-size: 150%;
 	font-weight: bold;
 	background: #ff2d75;
 	width: 10%;
