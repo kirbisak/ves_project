@@ -77,17 +77,20 @@
 			<span style="--i:14;"></span>
 			
 	</div>
-	<main style="flex-direction: row; display:flex">
-		<section style="width: 50%; margin-left: 1rem;">
-			<form method="POST" action="/render">
-				<button class="odoslat">Zobraziť</button>
-				<textarea name="ves" placeholder="Tu vložte kód:"></textarea>	
-			</form>
-		</section>
-		<section style="width: 50%;">
-			<img id="output" />
-		</section>
-		<script type="text/javascript" src="script.js"></script>
-	</main>
+<main>
+	<section class="section_left">
+	<form method="POST" action="/render">
+		<button class="odoslat">Zobraziť</button>
+		<textarea name="ves" placeholder="Tu vložte kód:"></textarea>	
+	</form>
+
+</section>
+<section	class="section_right">
+	<img id="output" />
+</section>
+</main>
+
+<script type="text/javascript" src="script.js" ></script>
+
 </body>
 </html>
