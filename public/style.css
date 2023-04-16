@@ -94,7 +94,7 @@ textarea{
 	font-size: 130%;
 	line-height: 1.8;
 	width: 72%;
-	height: 800px;
+	height: 700px;
 	transition: all 0.5s;
 }
 textarea:hover{
@@ -105,7 +105,7 @@ textarea:hover{
 }
 .odoslat, .button{
 	position: absolute;
-	margin-top: 40%;
+	margin-top: 38%;
 	margin-left: 66%;
 	font-family: sans-serif;
 	font-size: 120%;
