@@ -161,25 +161,6 @@ def filled_triangle(im, Ax, Ay, Bx, By, Cx, Cy, color):
 
     line(im, (x1, y), (x2, y), color)
 
-def get_resolution(lines):
-  set_width = 1000
-  set_height = 600
-  version = None
-  for line in lines:
-    words = line.split(" ")
-    if len(words) == 1:
-      continue
-    elif len(words) == 4 and words[0] == "VES":
-      width = int(words[2])
-      height = int(words[3])
-      if words[1] == "v1.8":
-        version = "v1.8"
-        return width, height, version
-      else:
-        exit()
-
-  return set_width, set_height, version
-
 def get_color(lines):
   color = (255, 255, 255)
   for line in lines:
@@ -192,11 +173,11 @@ def render_ves(ves):
 
     first_line = ves[0]
     first_line = first_line.split(" ")
+    width = int(first_line[2])
+    height = int(first_line[3])
 
-    width, height, version = get_resolution(first_line)
-    obr = Image.new('RGB', (width, height), get_color(first_line[::-1]))
+    obr = Image.new('RGB', (width, height), get_color(first_line))
     func_dict = {
-        "VES": get_resolution,
         "CLEAR": get_color,
         "LINE": thick_line,
         "TRIANGLE": triangle,
@@ -220,6 +201,8 @@ def render_ves(ves):
                     except TypeError:
                         print(f"Wrong number of arguments on line {line_count} - {x}")
                     line_count += 1
+                elif words[0] == "CLEAR":
+                    filled_rectangle(obr, 0, 0, width, height, hexColor(words[1]))
             elif "VES" not in lst:
                 print("Wrong format, please enter valid format: VES version width height")
                 return
