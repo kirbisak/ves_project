@@ -206,7 +206,7 @@ def render_ves(ves):
             elif "VES" not in lst:
                 print("Wrong format, please enter valid format: VES version width height")
                 return
-            elif words[0] == "\n":
+            elif words[0] == "\n" or words[0] == "" or words[0] == "VES":
                 line_count += 1
                 pass
             else:
