@@ -23,9 +23,11 @@ $ flask run
 
 ## Python webserver ako spustis
 ```
- py -3 -m venv venv
- venv\Scripts\activate
- set FLASK_APP=main.py
- flask run
+py -3 -m venv venv
+venv\Scripts\activate
+pip install Flask (len nainstalujes flask, staci to iba raz dat)
+python -m pip install --upgrade Pillow (len si updatnes PILL, iba raz staci)
+set FLASK_APP=main.py
+flask run
 
 ```
