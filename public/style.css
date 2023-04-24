@@ -70,10 +70,11 @@ img{
 	border-radius: 1%;
 	display: block;
 	max-width: 40%;
+	max-height: 60%;
 	position: absolute;
-	margin-top: 10%;
+	margin-top: 2%;
 	margin-right: 10%;
-	margin-left: 10%; 
+	margin-left: 2%; 
 
 	
 }
@@ -103,7 +104,28 @@ textarea:hover{
 	color: white;
 	border-color: #4fc3dc;
 }
-.odoslat, .button{
+
+.button2 {
+	position: relative;
+	font-family: sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	background: #ff2d75;
+	width: 10%;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 3px #4fc3dc;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: box-shadow, transform;
+}
+
+.odoslat, .button, .dropbtn{
 	position: absolute;
 	margin-top: 38%;
 	margin-left: 66%;
@@ -128,9 +150,62 @@ textarea:hover{
 	margin-top: 25%;
 	margin-left: 45%;
 }
-.odoslat:hover, .odoslat:focus, .odoslat.active{
+.odoslat:hover, .odoslat:focus, .odoslat.active {
 	box-shadow: 0 0 15px #4fc3dc;
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
+
+
+/* drop down menu */
+
+.dropbtn {
+	background-color: #ff2d75;
+	color: white;
+	padding: 20px;
+	width: 10%;
+	font-size: 16px;
+	border-radius: 25px;
+	font-family: sans-serif;
+	border: none;
+	cursor: pointer;
+  }
+  
+.dropbtn:hover, .dropbtn:focus {
+	box-shadow: 0 0 15px #4fc3dc;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+  
+.dropdown {
+	margin-top: 38%;
+	margin-left: 77%;
+	position: absolute;
+	display: inline-block;
+  }
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ff2d75;
+	font-family: sans-serif;
+	font-size: 20px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+.dropdown a:hover {
+	box-shadow: 0 0 15px #4fc3dc;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.show {display: block;}
