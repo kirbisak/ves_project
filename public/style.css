@@ -70,18 +70,16 @@ img{
 	border-radius: 1%;
 	display: block;
 	max-width: 40%;
-	max-height: 60%;
 	position: absolute;
-	margin-top: 2%;
-	margin-right: 10%;
-	margin-left: 2%; 
+	margin-top: 5%;
+	margin-left: 14%;
 
 	
 }
 textarea{
 	text-align:left;
 	border-color: #ff2d75;
-	position: relative;
+	position: fixed;
 	color: white;
 	background-color: #00000079;
 	margin-top: 5%;
@@ -94,8 +92,8 @@ textarea{
 	font-weight: 500;
 	font-size: 130%;
 	line-height: 1.8;
-	width: 72%;
-	height: 700px;
+	width: 35%;
+	height: 70%;
 	transition: all 0.5s;
 }
 textarea:hover{
@@ -104,9 +102,10 @@ textarea:hover{
 	color: white;
 	border-color: #4fc3dc;
 }
-
-.button2 {
-	position: relative;
+.odoslat {
+	position: fixed;
+	margin-top: 40%;
+	margin-left: 65%;
 	font-family: sans-serif;
 	font-size: 120%;
 	font-weight: bold;
@@ -124,11 +123,32 @@ textarea:hover{
 	transition-duration: 0.5s;
 	-webkit-transition-property: box-shadow, transform;
 }
-
-.odoslat, .button, .dropbtn{
-	position: absolute;
-	margin-top: 38%;
-	margin-left: 66%;
+.dropbtn{
+	position: fixed;
+	margin-top: 40%;
+	margin-left: 80%;
+	font-family: sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	background: #ff2d75;
+	width: 10%;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 3px #4fc3dc;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: box-shadow, transform;
+	
+}
+.vymazat{
+	position: fixed;
+	margin-top: 40%;
+	margin-left: 50%;
 	font-family: sans-serif;
 	font-size: 120%;
 	font-weight: bold;
@@ -146,66 +166,98 @@ textarea:hover{
 	transition-duration: 0.5s;
 	-webkit-transition-property: box-shadow, transform;
 }
-.button{
-	margin-top: 25%;
-	margin-left: 45%;
+.link{
+	top: 75%;
+	left: 35%;
+	position: fixed;
+	font-family: sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	background: #ff2d75;
+	width: 30%;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 3px #4fc3dc;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: box-shadow, transform;
 }
-.odoslat:hover, .odoslat:focus, .odoslat.active {
+.wp{
+	top: 85%;
+	left: 40%;
+	position: fixed;
+	font-family: sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	background: #ff2d75;
+	width: 20%;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 3px #4fc3dc;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: box-shadow, transform
+}
+.dropbtn:hover, .dropbtn:focus, .odoslat:hover, .odoslat:focus, .odoslat.active, .link:hover, .link:focus, link.active, .wp:hover, .wp:focus, .wp.active, .vymazat:hover, .vy:focus, .wp.active {
 	box-shadow: 0 0 15px #4fc3dc;
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
+.prvstr{
+	font-size: 160px;
+	color: #ff2d75;
+	text-align: center;
+	margin-top: 5%;
+	text-shadow: 0 0 5px #4fc3dc;	
+}
+h2{
+	color: #ffffff;
+	position: absolute;
+	font-size: 220%;
+	margin-left: 67%;
+	text-shadow: 0 0 5px #4fc3dc;
+}
 
 
 /* drop down menu */
 
-.dropbtn {
-	background-color: #ff2d75;
-	color: white;
-	padding: 20px;
-	width: 10%;
-	font-size: 16px;
-	border-radius: 25px;
-	font-family: sans-serif;
-	border: none;
-	cursor: pointer;
-  }
-  
-.dropbtn:hover, .dropbtn:focus {
-	box-shadow: 0 0 15px #4fc3dc;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-  }
-  
-.dropdown {
-	margin-top: 38%;
-	margin-left: 77%;
-	position: absolute;
-	display: inline-block;
-  }
   
 .dropdown-content {
+	font-size: 150%;
+	cursor: pointer;
 	display: none;
-	position: absolute;
+	position: fixed;
+	border-radius: 25px;
+	min-height: 10%;
+	margin-top: 20%;
+	margin-left: 15%;
 	background-color: #ff2d75;
-	font-family: sans-serif;
-	font-size: 20px;
+	min-width: 15%;
+	text-align: center;
 	overflow: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }
   
 .dropdown-content a {
-	color: black;
+	color: rgb(255, 255, 255);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
+	
   }
-  
-.dropdown a:hover {
-	box-shadow: 0 0 15px #4fc3dc;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
+
+.dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
+
