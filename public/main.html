@@ -82,22 +82,22 @@
 	<section class="section_left">
 	<form method="POST" action="/render">
 		<button class="odoslat">Zobraziť</button>
-		<button class="odoslat" style="margin-left: 55%;" onclick="clearbutton()">Vymazat</button>
-		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn" style="margin-left: 80%;">Obrazky tvorcov</button>
-			<div id="myDropdown" class="dropdown-content">
-			  <a onclick="kirbisak()">kirbisak</a>
-			  <a onclick="samv()">SamV</a>
-			  <a onclick="zoro()">ZoroPomstitel</a>
-			</div>
-		  </div>
+		<button class="vymazat" onclick="clearbutton()">Vymazať</button>
 		<textarea name="ves" placeholder="Tu vložte kód:" id="text"></textarea>
 	</form>
+	<button onclick="myFunction()" class="dropbtn">Príklady</button>
+	<div id="myDropdown" class="dropdown-content">
+		<a onclick="kirbisak()">Kirbisak</a>
+		<a onclick="samv()">SamV</a>
+		<a onclick="zoro()">ZoroPomstitel</a>
+	</div>
+	</section>
 
 </section>
 <section	class="section_right">
-	<img id="output" />
+	<img id="output" /> </img>
 </section>
+
 
 </main>
 
